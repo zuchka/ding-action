@@ -14,7 +14,7 @@ inputs:
     required: false
     default: 'ding.yaml'
   version:
-    description: 'DING version to install (e.g., v0.5.0). Use "latest" (default) to install the most recent release.'
+    description: 'DING version to install (e.g., v0.6.0). Use "latest" (default) to install the most recent release.'
     required: false
     default: 'latest'
   run-id:

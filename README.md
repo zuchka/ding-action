@@ -27,7 +27,7 @@ That's it. The action:
 |---|---|---|---|
 | `command` | yes | — | The command to wrap. Output lines that parse as DING events flow into the rule engine; non-event lines pass through cleanly. |
 | `rules` | no | `ding.yaml` | Path to the DING rules file. |
-| `version` | no | `latest` | DING version to install (e.g. `v0.5.0`). Pin for reproducibility. |
+| `version` | no | `latest` | DING version to install (e.g. `v0.6.0`). Pin for reproducibility. |
 | `run-id` | no | (auto-detected) | Override the auto-detected run ID. |
 | `fail-on-alert` | no | `false` | If `true`, fail the step when any alert fired, even if the wrapped command exited 0. |
 
