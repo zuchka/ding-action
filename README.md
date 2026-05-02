@@ -129,7 +129,7 @@ The `version:` input controls which **DING binary** is downloaded — independen
 
 ## License
 
-MIT — same as DING. See [LICENSE](./LICENSE).
+Apache-2.0 — same as DING. See [LICENSE](./LICENSE).
 
 ## Related
 
