@@ -69,7 +69,7 @@ runs:
 
         # Resolve version
         if [ "$DING_VERSION" = "latest" ] || [ -z "$DING_VERSION" ]; then
-          DING_VERSION="$(curl -sfL https://api.github.com/repos/zuchka/ding/releases/latest \
+          DING_VERSION="$(curl -sfL https://api.github.com/repos/ding-labs/ding/releases/latest \
             | grep '"tag_name"' | head -1 \
             | sed 's/.*"tag_name": *"\(.*\)".*/\1/')"
           if [ -z "$DING_VERSION" ]; then
@@ -79,8 +79,8 @@ runs:
         fi
 
         FILENAME="ding_${OS}_${ARCH}.tar.gz"
-        URL="https://github.com/zuchka/ding/releases/download/${DING_VERSION}/${FILENAME}"
-        CHECKSUM_URL="https://github.com/zuchka/ding/releases/download/${DING_VERSION}/checksums.txt"
+        URL="https://github.com/ding-labs/ding/releases/download/${DING_VERSION}/${FILENAME}"
+        CHECKSUM_URL="https://github.com/ding-labs/ding/releases/download/${DING_VERSION}/checksums.txt"
 
         # Install to a runner-temp location and add to PATH so we don't need sudo.
         DING_BIN_DIR="${RUNNER_TEMP}/ding-bin"

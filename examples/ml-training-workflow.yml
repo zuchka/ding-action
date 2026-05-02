@@ -22,7 +22,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Train under DING
-        uses: zuchka/ding-action@v1
+        uses: ding-labs/ding-action@v1
         with:
           rules: ./train-alerts.yaml
           command: python train.py --epochs 50

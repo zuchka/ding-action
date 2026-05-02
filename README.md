@@ -1,13 +1,13 @@
 # ding-action
 
-GitHub Actions wrapper for [DING](https://github.com/zuchka/ding) — alerting that ships with the workload.
+GitHub Actions wrapper for [DING](https://github.com/ding-labs/ding) — alerting that ships with the workload.
 
 Add real-time alerting to any CI step in one line. DING evaluates rules against the JSON events your job emits, fires alerts as GitHub Actions warnings during the run, and writes an aggregate summary to the workflow's step summary when the job exits.
 
 ## Usage
 
 ```yaml
-- uses: zuchka/ding-action@v1
+- uses: ding-labs/ding-action@v1
   with:
     rules: ./alerts.yaml
     command: pytest tests/
@@ -80,7 +80,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - run: pip install pytest
-      - uses: zuchka/ding-action@v1
+      - uses: ding-labs/ding-action@v1
         with:
           rules: ./alerts.yaml
           command: pytest tests/ --json-events
@@ -133,5 +133,5 @@ MIT — same as DING. See [LICENSE](./LICENSE).
 
 ## Related
 
-- [DING](https://github.com/zuchka/ding) — the alerting binary
+- [DING](https://github.com/ding-labs/ding) — the alerting binary
 - [ding.ing](https://ding.ing) — project homepage
